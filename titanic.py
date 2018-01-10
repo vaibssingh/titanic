@@ -605,7 +605,7 @@ predictions = gbm.predict(x_test)
 # In[27]:
 
 
-# Generate Submission File 
+# Generate output file as CSV
 StackingSubmission = pd.DataFrame({ 'PassengerId': PassengerId,
                             'Survived': predictions })
 StackingSubmission.to_csv("StackingSubmission.csv", index=False)
